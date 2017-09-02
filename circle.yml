@@ -17,5 +17,5 @@ deployment:
   prod:
     branch: master
     commands:
-      - aws s3 sync dist s3://testingawss3123/ --delete
+      - aws s3 sync ./dist s3://testingawss3123/ --delete
 
