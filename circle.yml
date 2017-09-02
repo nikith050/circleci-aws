@@ -14,9 +14,8 @@ test:
     - npm run test
 
 deployment:
-  # staging:
-  #   branch: development
-  #   commands:
-  #     - chmod +x ./scripts/deploy_nightly.sh
-  #     - ./scripts/deploy_nightly.sh
+  prod:
+    branch: master
+    commands:
+      - aws s3 sync dist s3://testingawss3123/ --delete
 
