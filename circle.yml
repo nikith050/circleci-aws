@@ -1,0 +1,22 @@
+machine:
+
+general:
+  branches:
+    only:
+      - master
+      
+dependencies:
+  override:
+    - npm install
+
+test:
+  override:
+    - npm run test
+
+deployment:
+  # staging:
+  #   branch: development
+  #   commands:
+  #     - chmod +x ./scripts/deploy_nightly.sh
+  #     - ./scripts/deploy_nightly.sh
+
